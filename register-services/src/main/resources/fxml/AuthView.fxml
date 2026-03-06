@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="br.saks.register_services.views.auth.AuthView"
+      spacing="12"
+      alignment="CENTER"
+      prefWidth="420"
+      prefHeight="500">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Autenticação"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <Label text="Escolha a opção:" />
+
+    <fx:define>
+        <ToggleGroup fx:id="modeGroup"/>
+    </fx:define>
+
+    <HBox spacing="20" alignment="CENTER">
+        <RadioButton fx:id="loginRadio"
+                     text="Login"
+                     toggleGroup="$modeGroup"
+                     selected="true"/>
+        <RadioButton fx:id="cadastroRadio"
+                     text="Cadastro"
+                     toggleGroup="$modeGroup"/>
+    </HBox>
+
+    <!-- CAMPOS DE CADASTRO -->
+    <Label fx:id="nomeLabel"
+           text="Nome Completo:"
+           visible="false"
+           managed="false"/>
+    <TextField fx:id="nomeField"
+               promptText="Digite seu nome completo"
+               visible="false"
+               managed="false"
+               prefWidth="300"/>
+
+    <Label fx:id="telefoneLabel"
+           text="Telefone:"
+           visible="false"
+           managed="false"/>
+    <TextField fx:id="telefoneField"
+               promptText="(99) 99999-9999"
+               visible="false"
+               managed="false"
+               prefWidth="300"/>
+
+    <Label fx:id="cpfLabel"
+           text="CPF:"
+           visible="false"
+           managed="false"/>
+    <TextField fx:id="cpfField"
+               promptText="000.000.000-00"
+               visible="false"
+               managed="false"
+               prefWidth="300"/>
+
+    <!-- CAMPOS COMUNS -->
+    <Label text="Email:"/>
+    <TextField fx:id="emailField"
+               promptText="email@exemplo.com"
+               prefWidth="300"/>
+
+    <Label text="Senha:"/>
+    <PasswordField fx:id="passwordField"
+                   promptText="Mínimo 6 caracteres"
+                   prefWidth="300"/>
+
+    <Label fx:id="errorLabel"
+           textFill="red"
+           wrapText="true"/>
+
+    <Button fx:id="confirmarButton"
+            text="Entrar"
+            onAction="#handleSubmit"
+            prefWidth="200"
+            style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+    <Button text="Voltar"
+            onAction="#handleBack"
+            prefWidth="200"
+            style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+</VBox>

@@ -1,0 +1,30 @@
+spring:
+  application:
+    ui:
+      title: Meu Aplicativo JavaFX
+    name: register-services
+
+  jackson:
+    default-property-inclusion: non_null
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/registerdb
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  debug: false
+
+app:
+  security:
+    publicKey: classpath:app.pub
+    privateKey: classpath:app.key

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox spacing="15"
+      alignment="TOP_CENTER"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="br.saks.register_services.views.user.UserView">
+
+    <Label text="Meu Perfil"
+           style="-fx-font-size: 22;" />
+
+    <HBox spacing="10">
+        <Label text="Nome:"/>
+        <Label fx:id="nomeLabel"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Email:"/>
+        <Label fx:id="emailLabel"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Telefone:"/>
+        <Label fx:id="telefoneLabel"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="CPF:"/>
+        <Label fx:id="cpfLabel"/>
+    </HBox>
+
+</VBox>
