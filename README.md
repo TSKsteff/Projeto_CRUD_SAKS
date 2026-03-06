@@ -261,3 +261,63 @@ Este projeto foi criado para praticar:
 ---
 
 💡 A segunda versão representa a **evolução da primeira**, trazendo **melhor arquitetura, organização e escalabilidade**.
+
+
+---
+# 🌿 Branches do Projeto
+
+O repositório possui diferentes branches que representam a evolução do projeto ao longo do tempo.
+
+## main
+Branch principal do projeto, contendo a versão mais recente e organizada da aplicação utilizando **Spring + JavaFX**.
+
+---
+
+## task-inicial
+Primeira implementação do sistema.
+
+Características:
+
+- Java puro
+- Conexão manual com o banco de dados
+- Estrutura simples
+- Código pouco organizado
+- Criado apenas para validar a ideia inicial do CRUD
+
+---
+
+
+## Melhoria-2024
+
+Versão intermediária do projeto.
+
+Mantém a mesma ideologia da versão inicial (**Java puro com conexão manual ao banco de dados**), porém com algumas melhorias:
+
+- Código mais organizado
+- Melhor separação de responsabilidades
+- Estrutura de pastas um pouco mais clara
+- Pequenas melhorias na lógica do CRUD
+
+Ainda assim, continua sendo uma aplicação simples sem uso de frameworks como Spring.
+
+---
+
+## task-spring
+
+Versão mais recente do projeto.
+
+Nesta branch foi feita uma evolução arquitetural do sistema utilizando:
+
+- **Spring Boot**
+- **JavaFX**
+- **JPA / Hibernate**
+- **JWT**
+- **Bean Validation**
+- **Lombok**
+
+O objetivo foi melhorar:
+
+- organização do código
+- separação de responsabilidades
+- autenticação e segurança
+- manutenção e escalabilidade do projeto
